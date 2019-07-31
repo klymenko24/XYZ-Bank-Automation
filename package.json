@@ -1,0 +1,27 @@
+{
+  "name": "XYZ",
+  "version": "1.0.0",
+  "main": "config.js",
+  "dependencies": {
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.4.2"
+  },
+  "scripts": {
+    "wd-start": "./node_modules/.bin/webdriver-manager start",
+    "wd-update": "./node_modules/.bin/webdriver-manager update",
+    "test": "./node_modules/.bin/protractor config.js",
+    "start": "npm run wd-update && npm run wd-start && npm run test",
+    "managerLoginSuite": "./node_modules/.bin/protractor config.js --suite managerLogin",
+    "customerLoginSuite": "./node_modules/.bin/protractor config.js --suite customerLogin"
+  },
+  "author": "Pashyk",
+  "license": ""
+}
