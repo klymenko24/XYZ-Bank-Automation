@@ -7,7 +7,7 @@ module.exports = {
         "commonjs": true,
         "node": true,
     },
-    "extends": "standard",
+    "extends": "airbnb-base",
     rules:{
         "linebreak-style": 0,
         "no-plusplus": [2, { allowForLoopAfterthoughts: true }],
