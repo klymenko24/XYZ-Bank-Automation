@@ -20,5 +20,9 @@
     "customerLoginSuite": "./node_modules/.bin/protractor config.js --suite customerLogin"
   },
   "author": "Pashyk",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "cucumber": "^5.1.0",
+    "protractor-cucumber-framework": "^6.1.3"
+  }
 }

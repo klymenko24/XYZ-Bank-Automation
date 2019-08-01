@@ -7,7 +7,7 @@ class ManagerPage extends LoginPage {
     this.customersList = $$('tr');
     this.openAccount = $('button[ng-click="openAccount()"]');
     this.addCustomer = $('button[ng-click="addCust()"]');
-    this.url = 'http://www.way2automation.com/angularjs-protractor/banking/#/manager';
+    this.url = `${browser.baseUrl}/manager`;
   }
 
   openCustomerList() {
